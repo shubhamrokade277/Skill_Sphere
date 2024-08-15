@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ad948e9-42a3-4974-ab24-b9539dfaf055" alt="Screenshot 2024-08-16 022101" width="400"/>
+  <img src="https://github.com/user-attachments/assets/3ad948e9-42a3-4974-ab24-b9539dfaf055" alt="Screenshot 2024-08-16 022101" width="700"/>
 </p>
 
 
