@@ -43,6 +43,8 @@ function About() {
     
   </div>
 </div>
+
+
 {/* <div class="card">
   <div class="image">
     <img src={require("../about/recent.jpg")} alt=""/>

@@ -80,6 +80,10 @@ export const login = (userName, pass) => async (dispatch) => {
 export const logout = () => (dispatch) => {
   localStorage.removeItem("userInfo");
   localStorage.removeItem("userRoleId");
+
+  //Shubham Changes
+  localStorage.removeItem("userRole");
+
   // dispatch(cartCntr(0));
   dispatch(reset());
   dispatch({ type: USER_LOGOUT });

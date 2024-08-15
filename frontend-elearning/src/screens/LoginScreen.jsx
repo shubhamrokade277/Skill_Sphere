@@ -21,11 +21,14 @@ import axios from "axios";
 function LoginScreen() {
   const navigate = useNavigate();
 
+  //useState Hooks:
+  //These are for storing the user's input and the role name retrieved after successful login.
   const [userName, setUserName] = useState("");
   const [pass, setPass] = useState("");
-
   const [roleName, setRoleName] = useState("");
 
+  //useDispatch Hook:
+  //Used to dispatch Redux actions, such as the login action.
   const dispatch = useDispatch();
   const [user,setUser]=useState({
     "userid":"",
@@ -43,11 +46,17 @@ const [errmsg,setErrmsg]=useState()
   // const roleName = localStorage.getItem("userRole")
   //   ? JSON.parse(localStorage.getItem("userRole"))
   //   : {};
-
   // const userID = localStorage.getItem("userRoleId")
   // ? JSON.parse(localStorage.getItem("userRoleId"))
   // : {};
 
+
+  
+//   FOR USER LOGIN
+//   Flow:
+//    If userInfo exists, the getRoleName function is called.
+//    getRoleName sends a POST request to http://localhost:9090/api/elearning/rolename with userName as the payload.
+//    If the request is successful, the response (role name) is stored in roleName.
   useEffect(() => {
     console.log("in use effect");
 
@@ -91,6 +100,13 @@ const [errmsg,setErrmsg]=useState()
     }
   }, [userInfo]);
 
+
+// FOR ROLE BASED NAVIGATION
+// Flow:
+//   The effect checks if roleName is not empty.
+//   Depending on the value of roleName, the user is navigated to the appropriate route
+//   If roleName is not one of these values, the user is redirected back to the login page (/login).
+
   useEffect(() => {
     if (roleName !== "") {
       // roleName === "Admin" ? navigate("/admin") : navigate("/instructor");
@@ -109,7 +125,7 @@ const [errmsg,setErrmsg]=useState()
     e.preventDefault();
     setErrors(loginvalidation(user))    
     setSubmitted(true)
-    dispatch(login(userName, pass));
+    dispatch(login(userName, pass)); //The dispatch function is called with the login action, passing userName and pass as arguments.
     // setMessage("Login Successfully");
   };
 
@@ -132,6 +148,8 @@ const [errmsg,setErrmsg]=useState()
                     onChange={(e) => setUserName(e.target.value)}
                     placeholder="Enter Username"
                     type="text"
+
+                    style={{ textTransform: 'none' }}
                     
                   />
                   {errors.userid && <small className="text-danger float-right">{errors.userid}</small>}
@@ -166,3 +184,13 @@ const [errmsg,setErrmsg]=useState()
 }
 
 export default LoginScreen;
+
+
+
+// User Actions and Flow:
+// The user enters their username and password.
+// Upon clicking the "Login" button, submitHandler is triggered.
+// The form data is validated, and any errors are displayed.
+// If validation passes, the login action is dispatched.
+// If the login is successful (userInfo is populated), the useEffect fetches the user's role.
+// Based on the role, the user is redirected to the appropriate dashboard (Admin, Instructor, Student).

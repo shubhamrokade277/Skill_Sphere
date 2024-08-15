@@ -38,6 +38,13 @@ function Header() {
   const logoutHandle = () => {
     localStorage.clear();
     dispatch(logout());
+
+    //Shubham changes:
+    // localStorage.clear();
+    // localStorage.removeItem("userInfo");
+    // localStorage.removeItem("userRoleId");
+
+
     navigate("/");
   };
   const [uid, setUid] = useState();
@@ -137,11 +144,12 @@ function Header() {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
+              
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/chatbot">
                   chat Bot
                 </Link>
-              </li>
+              </li> */}
 
               {userInfo && roleInfo === "Admin" ? (
                 <li className="nav-item">

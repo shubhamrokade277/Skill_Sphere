@@ -33,7 +33,7 @@ function RegisterScreen() {
   const [phoneNo, setPhoneNo] = useState("");
 
   // const [message, setMessage] = useState("");
-
+  
   const dispatch = useDispatch();
 
   const userRegister = useSelector((state) => state.userRegister);
@@ -162,6 +162,8 @@ function RegisterScreen() {
                     type="text"
                     value={userName}
                     onChange={(e) => setUserName(e.target.value)}
+
+                    style={{ textTransform: 'none' }}
                    
                   />
                   {unameError && (
@@ -176,6 +178,9 @@ function RegisterScreen() {
                     type="text"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
+
+                    style={{ textTransform: 'none' }}
+
                   />
                 </FormGroup>
                 {fnameError && (
@@ -190,6 +195,8 @@ function RegisterScreen() {
                     type="text"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
+
+                    style={{ textTransform: 'none' }}
                    
                   />
                 </FormGroup>
@@ -205,6 +212,9 @@ function RegisterScreen() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+
+                    style={{ textTransform: 'none' }}
+
                   />
                 </FormGroup>
                 {emailError && (
@@ -248,6 +258,9 @@ function RegisterScreen() {
                     type="textarea"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
+
+                    style={{ textTransform: 'none' }}
+                    
                   />
                 </FormGroup>
                 {addressError && (
