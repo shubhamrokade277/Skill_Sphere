@@ -1,34 +1,31 @@
 package com.backend.elearning.config;
 
-import org.apache.catalina.filters.CorsFilter;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-@Component
-public class SecurityConfig {
-	
+@SuppressWarnings("deprecation")
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
+	 @Override
+	    protected void configure(HttpSecurity http) throws Exception {
+	        http
+	                .authorizeRequests()
+	                .anyRequest().permitAll()  // Allow all requests without authentication
+	                .and()
+	                .csrf().disable();  // Disable CSRF if not needed
+	    }
 
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry
-                        .addMapping("/**")
-                        .allowedMethods(CorsConfiguration.ALL)
-                        .allowedHeaders(CorsConfiguration.ALL)
-                        .allowedOriginPatterns(CorsConfiguration.ALL);
-            }
-        };
-    }
-	
+	    @Bean
+	    BCryptPasswordEncoder passwordEncoder() {
+	        return new BCryptPasswordEncoder();
+	    }
+}
 	
 //	@Bean
 //	public FilterRegistrationBean<CorsFilter> corsFilter() {
@@ -57,4 +54,3 @@ public class SecurityConfig {
 //	}
 	
 	
-}

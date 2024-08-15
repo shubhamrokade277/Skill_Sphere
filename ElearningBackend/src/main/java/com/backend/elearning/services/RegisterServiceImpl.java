@@ -3,6 +3,7 @@ package com.backend.elearning.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.backend.elearning.models.Course;
@@ -20,9 +21,14 @@ public class RegisterServiceImpl implements RegisterService {
 
 	@Autowired
 	private CourseRepository courseRepository;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 
 	@Override
 	public String register(User reg) {
+		
+		reg.setPass(passwordEncoder.encode(reg.getPass()));
 		registerRepository.save(reg);
 		return reg.getUserName();
 	}

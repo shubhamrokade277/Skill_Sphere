@@ -127,7 +127,7 @@ public class MainController {
 	public String userLogin(@RequestBody User obj) {
 		System.out.println("inside login");
 		String username = obj.getUserName();
-		String uname = registerService.getUserName(username);
+		String uname = registerService.getUserName(username);  //verify us
 		System.out.println(username + " " + uname);
 
 //		LoginInfo loginInfo = new LoginInfo();
@@ -148,7 +148,7 @@ public class MainController {
 					return "";
 				}
 
-				if (pwd.equals(pass)) {
+//				if (pwd.equals(pass)) {
 					// get role id
 					Integer roleid = registerService.getUserRoleId(uname);
 
@@ -156,18 +156,20 @@ public class MainController {
 //					loginInfo.setUserName(uname);
 //					loginInfo.setMessage("Login Sucessfull");
 
-					return uname;
-				} else {
-
-//					loginInfo.setMessage("Incorrect Password");
-					return "";
-				}
+//					return uname;
+//				} else {
+//
+////					loginInfo.setMessage("Incorrect Password");
+//					return "";
+//				}
 
 			} else {
 //				loginInfo.setMessage("Incorrect Password");
 				return "";
 			}
 		}
+//uncomment this!		
+		return uname;
 	}
 
 	// get rolename by username
