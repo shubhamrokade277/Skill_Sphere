@@ -1,26 +1,55 @@
-# Skill_Sphere
+# Skill_Sphere 
+Grow yourself with future of E-Learning!
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<!--
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3ad948e9-42a3-4974-ab24-b9539dfaf055" alt="Screenshot 2024-08-16 022101" width="700"/>
 </p>
-
-
  ![Screenshot 2024-08-16 022101](https://github.com/user-attachments/assets/3ad948e9-42a3-4974-ab24-b9539dfaf055)
+-->
 
+Skill Sphere is an innovative e-learning platform engineered to make education accessible, flexible, and engaging for learners of all ages and backgrounds. The platform offers a comprehensive range of online courses across diverse domains, leveraging modern web technologies to deliver a seamless and interactive learning experience.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+A learning system based on formalised teaching but with the help of electronic resources is known as E-learning. While teaching can be based in or out of the classrooms, the use of computers and the Internet forms the major component of E-learning.
 
-Here's why:
+An eLearning project aims to create an engaging and informative online course that helps learners achieve the desired learning outcomes, but this is from the macro perspective. From the micro perspective, an eLearning project involves the effective coordination of your development team to build the course to standard and launch it.
+
+The Administrator of the system has authority to not only add but also he removes instructor or student . The student can login through proposed computer with their Enrolment student id matching the details to the student’s database, then they can watch the lecture
+
+System Features:
+1. Registration
+2. Login(Roles: Admin, Instructor, Student) <br>
+2.1 local storage use for login<br>
+2.2 forgot password
+3. Dashboard(Admin, Instructor, Student)
+4. Admin(Dashboard screen) functionalities:<br>
+4.1 user management(student and instructors)<br>
+4.2 view total revenue <br>
+4.3 view total users(instructor and students) count.
+5. Instructor(Dashboard screen) functionalities:<br>
+5.1 able to create courses(will have a form)<br>
+5.2 able to upload pdf for a topic<br>
+5.3 able to upload video for a topic<br>
+5.4 able to upload thumbnail for a topic<br>
+5.5 view total balance(earning)
+5.6 student enrolled counter
+6. Student(Dashboard screen) functionality<br>
+6.1 register for a free course<br>
+6.2 register(purchase) a paid course<br>
+6.3 needs to be done payment processing for paid course<br>
+6.4 view registered course<br>
+6.5 access video lesson of a registered course<br>
+6.6 access pdf for a registered course<br>
+6.7 course registration mail or order conformation maill
+
+<!--
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
 Use the `BLANK_README.md` to get started.
-
+-->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
