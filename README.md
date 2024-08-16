@@ -124,7 +124,7 @@ Don't forget to give the project a star! Thanks again!
 <a href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=missionaug24/Missions-SkillSphere-E-learningHub" />
 </a>
-
+<br><br>
 <!--
 Made with [contrib.rocks](https://contrib.rocks).
 <a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
@@ -136,7 +136,6 @@ Made with [contrib.rocks](https://contrib.rocks).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-<br>
 <!-- LICENSE -->
 ## License
 
@@ -146,7 +145,6 @@ See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-<br>
 <!-- CONTACT -->
 ## Contact
 
