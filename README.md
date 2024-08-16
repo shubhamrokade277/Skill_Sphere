@@ -21,28 +21,28 @@ The Administrator of the system has authority to not only add but also he remove
 System Features:
 1. Registration
 2. Login(Roles: Admin, Instructor, Student) <br>
-2.1 local storage use for login<br>
-2.2 forgot password
+   * local storage use for login<br>
+   * forgot password
 3. Dashboard(Admin, Instructor, Student)
 4. Admin(Dashboard screen) functionalities:<br>
-4.1 user management(student and instructors)<br>
-4.2 view total revenue <br>
-4.3 view total users(instructor and students) count.
+   * user management(student and instructors)<br>
+   * view total revenue <br>
+   * view total users(instructor and students) count.
 5. Instructor(Dashboard screen) functionalities:<br>
-5.1 able to create courses(will have a form)<br>
-5.2 able to upload pdf for a topic<br>
-5.3 able to upload video for a topic<br>
-5.4 able to upload thumbnail for a topic<br>
-5.5 view total balance(earning)
-5.6 student enrolled counter
+   * able to create courses(will have a form)<br>
+   * able to upload pdf for a topic<br>
+   * able to upload video for a topic<br>
+   * able to upload thumbnail for a topic<br>
+   * view total balance(earning)
+   * student enrolled counter
 6. Student(Dashboard screen) functionality<br>
-6.1 register for a free course<br>
-6.2 register(purchase) a paid course<br>
-6.3 needs to be done payment processing for paid course<br>
-6.4 view registered course<br>
-6.5 access video lesson of a registered course<br>
-6.6 access pdf for a registered course<br>
-6.7 course registration mail or order conformation maill
+   * register for a free course<br>
+   * register(purchase) a paid course<br>
+   * needs to be done payment processing for paid course<br>
+   * view registered course<br>
+   * access video lesson of a registered course<br>
+   * access pdf for a registered course<br>
+   * course registration mail or order conformation maill
 
 <!--
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
