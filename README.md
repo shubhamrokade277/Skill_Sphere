@@ -140,6 +140,7 @@ Made with [contrib.rocks](https://contrib.rocks).
 ## License
 
 See `LICENSE.txt` for more information.
+<br>
 
 <!--
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
