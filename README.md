@@ -1,5 +1,5 @@
 # Skill_Sphere 
-Grow yourself with future of E-Learning!
+Grow yourself with the future of E-Learning!
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -132,8 +132,9 @@ Made with [contrib.rocks](https://contrib.rocks).
 </a>
 -->
 
+<!--
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- LICENSE -->
@@ -141,8 +142,9 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 See `LICENSE.txt` for more information.
 
+<!--
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- CONTACT -->
