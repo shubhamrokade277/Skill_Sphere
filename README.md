@@ -58,7 +58,7 @@ Use the `BLANK_README.md` to get started.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+This is how you give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -136,7 +136,7 @@ Made with [contrib.rocks](https://contrib.rocks).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-
+<br>
 <!-- LICENSE -->
 ## License
 
@@ -146,7 +146,7 @@ See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-
+<br>
 <!-- CONTACT -->
 ## Contact
 
