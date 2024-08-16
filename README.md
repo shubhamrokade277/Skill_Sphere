@@ -83,8 +83,8 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 5. Change SQL credentials in `Application.properties`
    ```sh
-   spring.datasource.username=root
-   spring.datasource.password=shubham
+   spring.datasource.username=(Your Username)
+   spring.datasource.password=(Your Password)
    ```
 7. Run as Spring Boot Application
    ```sh
@@ -121,9 +121,16 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
+<a href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=missionaug24/Missions-SkillSphere-E-learningHub" />
+</a>
+
+<!--
+Made with [contrib.rocks](https://contrib.rocks).
 <a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
 </a>
+-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +139,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
