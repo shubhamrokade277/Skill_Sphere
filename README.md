@@ -149,7 +149,8 @@ See `LICENSE.txt` for more information.
 ## Contact
 
 Shubham Rokade: <br>
-[LinkedIN](https://www.linkedin.com/in/shubhamrokade277/)
+[Linked-In](https://www.linkedin.com/in/shubhamrokade277/) <br>
+[Link-Tree](https://linktr.ee/shubrokade)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
