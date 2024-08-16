@@ -13,18 +13,51 @@ function About() {
 
 <div class="card">
   <div class="image">
-    {/* <img src={require("../about/Amar.jpg")}/> */}
+    {<img src={require("../about/ShubhamRokade.jpeg")}/> }
   </div>
   <div class="info">
     <h4> </h4>
-    <h4>Full Stack-Web Developer</h4>
+    <h4>Developer</h4>
    
   </div>
 </div>
 
 <div class="card">
   <div class="image">
-    {/* <img  src={require("../about/Shiv.jpg")}/> */}
+    {<img  src={require("../about/AniketKhatal.jpeg")}/> }
+  </div>
+  <div class="info">
+    <h4> </h4>
+    <h4>Developer</h4>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="image">
+    {/* <img src={require("../about/Ashlekh[1].jpg")} alt=""/> */}
+  </div>
+  <div class="info">
+    <h4> </h4>
+    <h4>Full Stack-Web Developer</h4>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="image">
+    {/* <img src={require("../about/Ashlekh[1].jpg")} alt=""/> */}
+  </div>
+  <div class="info">
+    <h4> </h4>
+    <h4>Full Stack-Web Developer</h4>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="image">
+    {/* <img src={require("../about/Ashlekh[1].jpg")} alt=""/> */}
   </div>
   <div class="info">
     <h4> </h4>

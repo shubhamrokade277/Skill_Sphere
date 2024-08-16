@@ -2,6 +2,7 @@ import React from "react";
 import StudentDashboard from "../components/student/StudentDashboard";
 import "./common.css";
 
+//StudentScreen
 function StudentScreen() {
   return (
     <div class="container-fluid ">

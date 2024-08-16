@@ -168,7 +168,6 @@ public class MainController {
 				return "";
 			}
 		}
-//uncomment this!		
 		return uname;
 	}
 

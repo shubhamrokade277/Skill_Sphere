@@ -294,6 +294,7 @@ function RegisterScreen() {
                   <Button type="submit" color="success" >
                     Submit
                   </Button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Button type="button" onClick={reset} color="success">
                     reset
                   </Button>
