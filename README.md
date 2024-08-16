@@ -148,10 +148,8 @@ See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Shubham Rokade:
-[LinkedIN]([https://twitter.com/your_username](https://www.linkedin.com/in/shubhamrokade277/))
-[Link Tree]([(https://linktr.ee/shubrokade)))
-
+Shubham Rokade: <br>
+[LinkedIN](https://www.linkedin.com/in/shubhamrokade277/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
