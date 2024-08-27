@@ -290,7 +290,7 @@ function MyCart() {
                       className="btn btn-success btn-lg btn-block"
                       type="submit"
                     >
-                      Pay
+                      Purchase
                     </Button>
                   </Form>
                 </div>

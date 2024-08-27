@@ -66,7 +66,7 @@ function StudentDashboard() {
                 className="nav-link px-0 align-middle"
               >
                 <i class="fa fa-dashboard "></i>
-                <span class="ms-1 d-none d-sm-inline ">Register Courses</span>
+                <span class="ms-1 d-none d-sm-inline ">My Courses</span>
               </Link>
             </li>
             <li>

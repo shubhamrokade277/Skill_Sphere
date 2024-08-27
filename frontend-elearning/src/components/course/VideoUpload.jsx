@@ -494,7 +494,7 @@ function VideoUpload() {
                     // getOptionLabel={(item) => item}
                     placeholder={
                       selectedSubtopic === ""
-                        ? "Select subtopic under u wanna upload "
+                        ? "Select subtopic under you wanna upload "
                         : selectedSubtopic
                     }
                   />
@@ -508,6 +508,12 @@ function VideoUpload() {
                   <button className="btn btn-success" onClick={upload}>
                     Upload
                   </button>
+
+                  {/* Added validation Lable */}
+                  <br />
+                  <Label for="" style={{ fontSize: '14px', color: 'red', marginLeft: '20px' }}>
+                    Only .Mp4 & .Mov files are Supported (Max Size: 200mb)
+                  </Label>
                 </>
 
                 {/* <Label for="">Select upload type</Label>

@@ -173,7 +173,8 @@ function CourseCard({ prop }) {
                   handleBuyCourse(prop);
                 }}
               >
-                {prop.courseType === "paid" ? "Buy now" : "Enroll now"}
+                {/* {prop.courseType === "paid" ? "Buy now" : "Enroll now"} */}
+                {prop.courseType === "paid" ? "Add to Cart" : "Enroll now"}
               </button>
             </div>
           </div>

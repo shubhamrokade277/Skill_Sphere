@@ -7,7 +7,7 @@ const Footer = () => {
         <section className="mb-4">
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub"
             role="button"
           >
             <i className="fa fa-linkedin" aria-hidden="true"></i>
@@ -15,7 +15,7 @@ const Footer = () => {
 
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub"
             role="button"
           >
             <i className="fa fa-twitter" aria-hidden="true"></i>
@@ -23,7 +23,7 @@ const Footer = () => {
 
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub"
             role="button"
           >
             <i className="fa fa-google"></i>
@@ -31,7 +31,7 @@ const Footer = () => {
 
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub"
             role="button"
           >
             <i className="fa fa-facebook"></i>
@@ -39,7 +39,7 @@ const Footer = () => {
 
           <a
             className="btn btn-outline-light btn-floating m-1"
-            href="#!"
+            href="https://github.com/missionaug24/Missions-SkillSphere-E-learningHub"
             role="button"
           >
             <i className="fa fa-github"></i>
@@ -51,7 +51,7 @@ const Footer = () => {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        &copy; 2022 copyright
+        &copy; Copyright 2024 CDAC. All Rights Reserved.
         {/* <a className="text-white" href="#">
           e-learning.com
         </a> */}

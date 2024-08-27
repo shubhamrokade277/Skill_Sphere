@@ -6,7 +6,6 @@ import { logout } from "../../actions/userActions";
 import { getCourseCategories } from "../../data/catRoutes";
 
 function Header() {
-
   let categories = getCourseCategories();
 
   const navigate = useNavigate();
@@ -44,15 +43,10 @@ function Header() {
     // localStorage.removeItem("userInfo");
     // localStorage.removeItem("userRoleId");
 
-
     navigate("/");
   };
   const [uid, setUid] = useState();
   const [aproveStatus, setAproveStatus] = useState("no");
-
-
-
-  
 
   const getIdByName = async () => {
     try {
@@ -118,7 +112,7 @@ function Header() {
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <span>E-Learning</span>
+            <span>SkillSphere</span>
           </Link>
 
           <button
@@ -144,7 +138,7 @@ function Header() {
                   About Us
                 </Link>
               </li>
-              
+
               {/* <li className="nav-item">
                 <Link className="nav-link" to="/chatbot">
                   chat Bot
@@ -172,62 +166,65 @@ function Header() {
                       Dashboard
                     </Link>
                   </li>
-                  {aproveStatus==="yes"? <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Manage Modules
-                    </a>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to={"/instruct/tutorial"}
-                        >
-                          Add new course
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to={"/instruct/tutorial/topic"}
-                        >
-                          Add chapter
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to={"/instruct/tutorial/subtopic"}
-                        >
-                          Add subtopic
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to={"/instruct/videoup"}
-                        >
-                          Upload Video
-                        </Link>
-                      </li>
+                  {aproveStatus === "yes" ? (
+                    <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Manage Modules
+                      </a>
+                      <ul
+                        className="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to={"/instruct/tutorial"}
+                          >
+                            Add new course
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to={"/instruct/tutorial/topic"}
+                          >
+                            Add chapter
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to={"/instruct/tutorial/subtopic"}
+                          >
+                            Add subtopic
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item"
+                            to={"/instruct/videoup"}
+                          >
+                            Upload Video
+                          </Link>
+                        </li>
 
-                      {/* <li>
+                        {/* <li>
                         <Link className="dropdown-item" to={"/instruct/fileup"}>
                           Upload File
                         </Link>
                       </li> */}
-                    </ul>
-                  </li>:""}
-                 
+                      </ul>
+                    </li>
+                  ) : (
+                    ""
+                  )}
                 </>
               ) : (
                 <></>

@@ -34,12 +34,12 @@ function Carousel() {
         id="carouselExampleInterval"
         class="carousel slide"
         data-bs-ride="carousel"
-        style={{ filter: "brightness(50%)", height: "80%" }}
+        style={{ filter: "brightness(100%)", height: "80%" }}
       >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <img
-              src={require("../../assets/1.jpg")}
+              src={require("../../assets/1.png")}
               class="d-block w-100"
               alt="..."
             />
@@ -51,13 +51,13 @@ function Carousel() {
               alt="..."
             />
           </div>
-          <div class="carousel-item" data-bs-interval="400">
+          {/* <div class="carousel-item" data-bs-interval="400">
             <img
               src={require("../../assets/5.jpg")}
               class="d-block w-100"
               alt="..."
             />
-          </div>
+          </div> */}
         </div>
         <button
           class="carousel-control-prev"

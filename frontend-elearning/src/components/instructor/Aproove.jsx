@@ -104,7 +104,7 @@ function Aproove() {
                   <Label for="firstName">Full Name</Label>
                   <Input
                     id="userName"
-                    placeholder="Enter qualification"
+                    placeholder="Enter Name"
                     type="text"
                     value={qualify}
                     onChange={(e) => setQualify(e.target.value)}

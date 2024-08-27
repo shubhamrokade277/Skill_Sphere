@@ -1,3 +1,5 @@
+//action that handle user-related operations. Redux for state management, axios for making HTTP requests to a backend server.
+
 import axios from "axios";
 import {
   USER_ADD_CHAPTER_FAIL,
@@ -30,13 +32,15 @@ export const login = (userName, pass) => async (dispatch) => {
         "Content-type": "application/json",
       },
     };
-    //destructuring original => res.data
+
+    //sends post req to URL /login with username and pass
     const { data } = await axios.post(
       "http://localhost:9090/api/elearning/login",
       { userName: userName, pass: pass },
       config
     );
 
+    //returns data in payload
     dispatch({
       type: USER_LOGIN_SUCCESS,
       payload: data,
@@ -45,9 +49,11 @@ export const login = (userName, pass) => async (dispatch) => {
     if (data === "") {
       alert("please enter valid credentials");
     }
+
+    //save userInfo in local storage
     localStorage.setItem("userInfo", JSON.stringify(data));
 
-    //
+    
     {
       const { data } = await axios.post(
         "http://localhost:9090/api/elearning/rolename",
@@ -84,7 +90,6 @@ export const logout = () => (dispatch) => {
   //Shubham Changes
   localStorage.removeItem("userRole");
 
-  // dispatch(cartCntr(0));
   dispatch(reset());
   dispatch({ type: USER_LOGOUT });
 };

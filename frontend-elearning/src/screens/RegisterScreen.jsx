@@ -184,7 +184,7 @@ function RegisterScreen() {
                   />
                 </FormGroup>
                 {fnameError && (
-                  <p style={{ color: "red" }}>Only text data alloved.</p>
+                  <p style={{ color: "red" }}>Only text data allowed.</p>
                 )}
 
                 <FormGroup>
@@ -201,7 +201,7 @@ function RegisterScreen() {
                   />
                 </FormGroup>
                 {lnameError && (
-                  <p style={{ color: "red" }}>Only text data alloved.</p>
+                  <p style={{ color: "red" }}>Only text data allowed.</p>
                 )}
 
                 <FormGroup>
@@ -294,7 +294,7 @@ function RegisterScreen() {
                   <Button type="submit" color="success" >
                     Submit
                   </Button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;
                   <Button type="button" onClick={reset} color="success">
                     reset
                   </Button>

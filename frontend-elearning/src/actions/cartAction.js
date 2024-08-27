@@ -4,13 +4,6 @@ import {
   USER_ADD_COUNTER_SUCCESS,
 } from "../constants/userConstants";
 
-// export const cartCntr = (counter) => async (dispatch) => {
-//   dispatch({
-//     type: USER_ADD_COUNTER_SUCCESS,
-//     payload: counter,
-//   });
-// };
-
 export const increment = () => {
   return {
     type: "INCREMENT",
